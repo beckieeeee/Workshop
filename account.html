@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="header">
+                <div class="logo">
+                    <span>W</span>
+                </div>
+                <div class="title">
+                    <h1>WorkShop</h1>
+                </div>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <div class="home">
+                        <i class="fa fa-home" style="font-size:24px"></i>
+                        <a href="home.html" target="_parent">Home</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="customer">
+                        <i class="fa fa-users" style="font-size:24px"></i>
+                        <a href="customer.html" target="_self">Customers</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="dept">
+                        <i class="fa fa-address-card" style="font-size:24px"></i>
+                        <a href="dept.html" target="_self">Departments</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="mediabtn">
+                        <i class="fa fa-image" style="font-size:24px"></i>
+                        <a href="media.html" target="_self">Media</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="account">
+            <i class="fa fa-user" style="font-size:24px"></i>
+            <a href="account.html">My Account</a>
+        </div>
+    </div><div>
+        <div class="search">
+            <input type="text" placeholder="Search in Home">
+            <button style="font-size:24px;"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="profile">
+            <div class="profile-image">
+                <img src="girl.jpg".jpg" alt="Profile Image">
+                <button type="button" class="edit-button" onclick="editImage()"><i class="fa fa-edit" style="font-size:24px"></i></button>
+            </div>
+            <form id="profile-form">
+                <label for="name">Name:</label>
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Danbruy Doe" required>
+                    <button type="button" class="edit-button" onclick="editName('name')"><i class="fa fa-edit" style="font-size:24px"></i></button>
+                </div>
+                <label for="email">Email:</label>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Danbruy@gmail.com" required>
+                    <button type="button" class="edit-button" onclick="editEmail('email')"><i class="fa fa-edit" style="font-size:24px"></i></button>
+                </div>
+                <label for="phone">Phone:</label>
+                <div class="form-group">
+                    <input type="text" id="phone" placeholder="854877333" required>
+                    <button type="button" class="edit-button" onclick="editPhone('phone')"><i class="fa fa-edit" style="font-size:24px"></i></button>
+                </div>
+                <label for="dob">DOB:</label>
+                <div class="form-group">
+                    <input type="text" id="dob" placeholder="March 6, 2002" required>
+                    <button type="button" class="edit-button" onclick="editDob('dob')"><i class="fa fa-edit" style="font-size:24px"></i></button>
+                </div>
+                <div class="form-actions">
+                    <button type="button" onclick="save()">Save</button>
+                    <button type="button" onclick="cancel()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js" ></script>
+</body>
+</html>
